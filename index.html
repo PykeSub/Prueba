@@ -6,20 +6,44 @@
     <title>Pagina de Departamentos</title>
     <script type="module" src="assets/JS/firebase.js"></script>
     <script type="module" src="assets/JS/script.js"></script>
+    <link rel="stylesheet" href="assets/CSS/estilos.css">
 </head>
 <body>
-    <h1>Departamentos Modernos</h1>
 
-    <h2>Registrar</h2>
-    <button id="btnRegistrar">Registrar</button>
-    <input type="text" id="nombre" placeholder="Nombre">
-    <input type="number" id="precio" placeholder="$Precio">
-    <input type="number" id="telefono" placeholder="Telefono">
-    <input type="text" id="direccion" placeholder="Direccion">
-    <input type="text" id="color" placeholder="Color">
-    <input type="date" id="fechaDeDisponibilidad" placeholder="Fecha de Disponibilidad">
+    <button id="btnContraste">Contraste</button>
+    <button id="btnValidar">Validar</button>
+    <button>Fuente</button>
 
-    <h2>Tabla</h2>
+    <form>
+        <h1 class="textH1">Departamentos Modernos</h1>
+        <h1 class="textH1">Registro</h2>
+        <label>Nombre<span>*</span></label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingresa Algo">
+        <p class="noDisplay" id="pnombre">Debes ingresar el Nombre</p>
+        <label>Precio<span>*</span></label>
+        <input type="number" id="precio" name="precio" placeholder="Ingresa Algo">
+        <p class="noDisplay" id="pprecio">Debes ingresar el Precio</p>
+        <label>Telefono</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ingresa Algo">
+        <p class="noDisplay" id="ptelefono">Debes ingresar el Telefono</p>
+        <label>Direccion<span>*</span></label>
+        <input type="text" id="direccion" name="direccion" placeholder="Ingresa Algo">
+        <p class="noDisplay" id="pdireccion">Debes ingresar una Direccion</p>
+        <label>Color<span>*</span></label>
+        <input type="text" id="color" name="color" placeholder="Ingresa Algo">
+        <p class="noDisplay" id="pcolor">Debes ingresar el Color</p>
+        <label>Fecha Disponibilidad<span>*</span></label>
+        <input type="date" id="fechaDeDisponibilidad" name="fechaDeDisponibilidad" placeholder="Ingresa Algo">
+        <p class="noDisplay" id="pfechaDeDisponibilidad">Debes ingresar la Fecha</p>
+        <label>Mensaje<span>*</span></label>
+        <textarea id="mensaje" placeholder="Ingresa algo"></textarea>
+        <p class="noDisplay" id="pmensaje">Debes ingresar un Mensaje</p>
+        <input type="radio" id="loft" name="tipos_d" value="Loft">
+        <label for="Loft"><span>LOFT</span></label>
+        <button id="btnRegistrar" type="button">Registrar</button>
+    </form>
+
+    <h1 class="textoH1">Tabla</h1>
     <table id="departamentos">
         <thead>
             <tr>
@@ -29,18 +53,22 @@
                 <th>Direccion</th>
                 <th>Color</th>
                 <th>Fecha de Disponibilidad</th>
+                <th>Mensaje</th>
+                <th>Opciones</th>
             </tr>
         </thead>
         <tbody id="tbDepartamentos"></tbody>
     </table>
 
-    <h2>Actualizar</h2>
-    <button id="btnActualizar">Actualizar</button>
+    <h1 class="textoH1">Actualizar</h1>
     <input type="text" id="UPDnombre" placeholder="Nombre">
     <input type="number" id="UPDprecio" placeholder="$Precio">
     <input type="number" id="UPDtelefono" placeholder="Telefono">
     <input type="text" id="UPDdireccion" placeholder="Direccion">
     <input type="text" id="UPDcolor" placeholder="Color">
     <input type="date" id="UPDfechaDeDisponibilidad" placeholder="Fecha De Disponibilidad">
+    <textarea name="mensaje" id="UPDmensaje" placeholder="Mensaje"></textarea>
+    <button id="btnActualizar">Actualizar</button>
+
 </body>
 </html>

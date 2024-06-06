@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: orange;
+    margin: 1%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 55px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    text-align: center;
+    border-bottom: 1px solid white;
+}
+
+form {
+    background-color: deepskyblue;
+    width: 50%;
+    margin: auto;
+}
+
+span {
+    color: black;
+}
+
+label, input, textarea, p, button {
+    display: block;
+    width: 90%;
+    margin: auto;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    border: 1px black solid;
+}
+
+button {
+    background-color: black;
+    padding: 5px 10px;
+    color: white;
+    border-color: darkgray;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 45px;
+}
+
+p.noDisplay {
+    display: none;
+}
+
+h1, #p.Texto {
+    color: black;
+    text-align: center;
+}

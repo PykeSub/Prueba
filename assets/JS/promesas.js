@@ -21,7 +21,7 @@ export const actualizarDepartamento = async(departamento, id)=>{
     await updateDoc(ref, departamento);
 }
 
-export const eliminarDepartamento = async()=>{
+export const eliminarDepartamento = async(id)=>{
     const ref = doc(db, "departamentos", id);
     await deleteDoc(ref);
 }
