@@ -10,41 +10,62 @@
 </head>
 <body>
 
-    <button id="btnContraste">Contraste</button>
-    <button id="btnValidar">Validar</button>
-    <button>Fuente</button>
+    <button id="btnContraste" type="button">Contraste</button>
+    <button id="btnFuente" type="button">Fuente</button>
+
+    <h1 class="textoH1">Departamentos Modernos</h1>
+
+    <main class="textoH1">
+        <p>- Esta pagina se trata de "Registrar", "Actualizar" y "Eliminar" un formulario, que se tratara de varios tipos de Departamentos,
+           ya sean modernos como tambien antiguos.</p>
+
+        <p>- En el Formulario de abajo, podras registrar tu Departamento que quieres ya sea vender o arrendar,
+            y al registrarlo se quedara guardado en la tabla.</p>
+
+        <p>- Al presionar el boton de "Contraste", la pagina se volvera en modo "Oscuro". 
+            Y al presionar el boton "Validar" que se encuentra abajo del boton "Registrar" del Formulario,
+            podras ver si te equivocaste o si estan correcto todos los campos que quieras registrar de los Departamentos.</p>
+            
+        <p>- Una ves ya veas que al presionar el boton "Validar" no te sale ninguna ventana de alerta, 
+            entonces podras presionar el boton "Registrar" para agregarlo a la tabla que se encuentra abajo del Formulario.</p>
+    </main>
 
     <form>
-        <h1 class="textH1">Departamentos Modernos</h1>
-        <h1 class="textH1">Registro</h2>
-        <label>Nombre<span>*</span></label>
+        <h1 class="textoH1">Registro</h2>
+        <label id="n">Departamento<span>*</span></label>
         <input type="text" id="nombre" name="nombre" placeholder="Ingresa Algo">
         <p class="noDisplay" id="pnombre">Debes ingresar el Nombre</p>
-        <label>Precio<span>*</span></label>
+        <label id="p">Precio<span>*</span></label>
         <input type="number" id="precio" name="precio" placeholder="Ingresa Algo">
         <p class="noDisplay" id="pprecio">Debes ingresar el Precio</p>
-        <label>Telefono</label>
+        <label id="t">Telefono<span>*</span></label>
         <input type="tel" id="telefono" name="telefono" placeholder="Ingresa Algo">
         <p class="noDisplay" id="ptelefono">Debes ingresar el Telefono</p>
-        <label>Direccion<span>*</span></label>
+        <label id="d">Direccion<span>*</span></label>
         <input type="text" id="direccion" name="direccion" placeholder="Ingresa Algo">
         <p class="noDisplay" id="pdireccion">Debes ingresar una Direccion</p>
-        <label>Color<span>*</span></label>
+        <label id="c">Color<span>*</span></label>
         <input type="text" id="color" name="color" placeholder="Ingresa Algo">
         <p class="noDisplay" id="pcolor">Debes ingresar el Color</p>
-        <label>Fecha Disponibilidad<span>*</span></label>
+        <label id="f">Fecha Disponibilidad<span>*</span></label>
         <input type="date" id="fechaDeDisponibilidad" name="fechaDeDisponibilidad" placeholder="Ingresa Algo">
         <p class="noDisplay" id="pfechaDeDisponibilidad">Debes ingresar la Fecha</p>
-        <label>Mensaje<span>*</span></label>
+        <label id="e">Email<span>*</span></label>
+        <input type="email" id="email" name="email" placeholder="Ingresa algo">
+        <p class="noDisplay" id="pemail">Debes ingresar el Email</p>
+        <label id="m">Mensaje<span>*</span></label>
         <textarea id="mensaje" placeholder="Ingresa algo"></textarea>
         <p class="noDisplay" id="pmensaje">Debes ingresar un Mensaje</p>
         <input type="radio" id="loft" name="tipos_d" value="Loft">
         <label for="Loft"><span>LOFT</span></label>
+        <input type="radio" id="duplex" name="tipos_de" value="duplex">
+        <label for="Duplex"><span>DUPLEX</span></label>
+        <button id="btnValidar">Validar Campos</button>
         <button id="btnRegistrar" type="button">Registrar</button>
     </form>
 
     <h1 class="textoH1">Tabla</h1>
-    <table id="departamentos">
+    <table class="textoH1" id="departamentos">
         <thead>
             <tr>
                 <th>Nombre</th>
@@ -53,6 +74,7 @@
                 <th>Direccion</th>
                 <th>Color</th>
                 <th>Fecha de Disponibilidad</th>
+                <th>Email</th>
                 <th>Mensaje</th>
                 <th>Opciones</th>
             </tr>
@@ -67,8 +89,9 @@
     <input type="text" id="UPDdireccion" placeholder="Direccion">
     <input type="text" id="UPDcolor" placeholder="Color">
     <input type="date" id="UPDfechaDeDisponibilidad" placeholder="Fecha De Disponibilidad">
+    <input type="email" id="UPDemail" placeholder="Email">
     <textarea name="mensaje" id="UPDmensaje" placeholder="Mensaje"></textarea>
-    <button id="btnActualizar">Actualizar</button>
+    <button id="btnActualizar" type="button">Actualizar</button>
 
 </body>
 </html>
